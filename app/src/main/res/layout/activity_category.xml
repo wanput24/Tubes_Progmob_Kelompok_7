@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context=".CategoryActivity"
+    android:id="@+id/activity_category">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:id="@+id/tv_title_category"
+                    android:text="@string/judul_kategori"
+                    android:textSize="22sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/pbold"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_desc_category"
+                    android:text="@string/desc_category"
+                    android:layout_marginTop="30dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/pregular"
+                    android:layout_marginRight="150dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <ImageView
+                    android:src="@drawable/lgkatt"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp">
+                </ImageView>
+
+            </RelativeLayout>
+
+            <GridLayout
+                android:id="@+id/mygrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="4"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
+                >
+
+                <!--        kategori obat sakit kepala-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:paddingRight="12dp"
+                    android:layout_margin="15dp"
+                    android:id="@+id/l_kepala">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:onClick="toKepala"
+                        android:id="@+id/ly_kepala">
+
+                        <ImageView
+                            android:src="@drawable/kepala"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/img_kepala">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:id="@+id/tv_kepala"
+                            android:text="@string/obat_sakit_kepala"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--        kategori obat pegal-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:paddingRight="12dp"
+                    android:layout_margin="15dp"
+                    android:id="@+id/l_pegal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:onClick="toPegal">
+
+                        <ImageView
+                            android:src="@drawable/pegal"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/img_pegal">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:id="@+id/tv_pegal"
+                            android:text="@string/obat_sakit_pegal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--        utk katgori vitamin-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:paddingRight="12dp"
+                    android:layout_margin="15dp"
+                    android:id="@+id/l_vitamin">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:onClick="toVitamin">
+
+                        <ImageView
+                            android:src="@drawable/vitamin"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/img_vitamin">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:id="@+id/tv_vitamin"
+                            android:text="@string/obat_vitamin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--        katgori obat maag-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:paddingRight="12dp"
+                    android:layout_margin="15dp"
+                    android:id="@+id/l_maag">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:onClick="toMaag">
+
+                        <ImageView
+                            android:src="@drawable/maag"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/img_maag">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:id="@+id/tv_maag"
+                            android:text="@string/obat_maag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--        kategori obat luka-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:paddingRight="12dp"
+                    android:layout_margin="15dp"
+                    android:id="@+id/l_luka">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:onClick="toLuka">
+
+                        <ImageView
+                            android:src="@drawable/luka"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/img_luka">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:id="@+id/tv_luka"
+                            android:text="@string/obat_luka"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--        kategori obat Flu-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:paddingRight="12dp"
+                    android:layout_margin="15dp"
+                    android:id="@+id/l_flu">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:onClick="toFlu">
+
+                        <ImageView
+                            android:src="@drawable/flu"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/img_flu">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:id="@+id/tv_flu"
+                            android:text="@string/obat_flu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--        katgori obat batuk-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:paddingRight="12dp"
+                    android:layout_margin="15dp"
+                    android:id="@+id/l_batuk">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:onClick="toBatuk">
+
+                        <ImageView
+                            android:src="@drawable/batuk"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/img_batuk">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:id="@+id/tv_batuk"
+                            android:text="@string/obat_batuk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!--        katgori obat panas-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:paddingRight="12dp"
+                    android:layout_margin="15dp"
+                    android:id="@+id/l_panas">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:onClick="toPanas">
+
+                        <ImageView
+                            android:src="@drawable/panas"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/img_panas">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:id="@+id/tv_panas"
+                            android:text="@string/obat_panas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

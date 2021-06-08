@@ -1,0 +1,47 @@
+<resources>
+    <!--    home-->
+    <string name="app_name">Aplikasi Obat Keluarga</string>
+    <string name="judul">APLIKASI OBAT KELUARGA</string>
+    <string name="desc_home">Aplikasi menampilkan list obat dan deskripsi obat yang perlu disiapkan oleh masing masing keluarga</string>
+    <string name="kategori">Cari Kategori</string>
+    <string name="tekan_tombol">Tekan tombol untuk memulai</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!--    kategori obat-->
+    <string name="judul_kategori">Kategori Obat</string>
+    <string name="desc_category">Menampilkan obat sesuai dengan kategori dan jenisnya</string>
+    <string name="obat_sakit_kepala">Obat Sakit Kepala</string>
+    <string name="obat_sakit_pegal">Obat Pegal</string>
+    <string name="obat_vitamin">Vitamin</string>
+    <string name="obat_maag">Obat Maag</string>
+    <string name="obat_luka">Obat Luka</string>
+    <string name="obat_flu">Obat Flu</string>
+    <string name="obat_batuk">Obat Batuk</string>
+    <string name="obat_panas">Obat Penurun Panas</string>
+    <string name="list_obat">ini list obat</string>
+    <string name="item_name">Nama Obat</string>
+    <string name="desc">Deskripsi obat</string>
+
+    <!--    detail-->
+    <string name="judul_detail">Detail Obat</string>
+    <string name="label_desc">Deskripsi</string>
+    <string name="label_indikasi">Indikasi</string>
+    <string name="indikasi">indikasi</string>
+    <string name="label_kategori">Kategori</string>
+    <string name="tv_kategori">kategori</string>
+    <string name="label_komposisi">Komposisi</string>
+    <string name="komposisi">komposisi</string>
+    <string name="label_dosis">Dosis</string>
+    <string name="dosis">dosis</string>
+    <string name="label_aturan">Aturan Pakai</string>
+    <string name="aturan">aturan</string>
+    <string name="label_kemasan">Kemasan</string>
+    <string name="kemasan">kemasan</string>
+    <string name="label_perhatian">Perhatian</string>
+    <string name="perhatian">perhatian</string>
+    <string name="tips">Tips Kesehatan</string>
+    <string name="item_title">Judul Tips</string>
+    <string name="see_detail">more</string>
+
+
+</resources>

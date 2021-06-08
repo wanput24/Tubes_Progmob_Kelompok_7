@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="match_parent"
+        android:layout_height="331dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/mainlogo" />
+
+    <TextView
+        android:id="@+id/tv_name_application"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/judul"
+        android:fontFamily="@font/pmedium"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_margin="0sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_desc_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pregular"
+        android:textSize="15sp"
+        android:layout_margin="0dp"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+        android:textAlignment="center"
+        android:text="@string/desc_home"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/btn">
+        <Button
+            android:id="@+id/btn_kategori"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgbttn"
+            android:fontFamily="@font/pbold"
+            android:text="@string/kategori"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="6dp"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/btn_tips"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgbttn"
+            android:fontFamily="@font/pbold"
+            android:text="@string/tips"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:onClick="toTips"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_detail_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:fontFamily="@font/pregular"
+            android:gravity="center"
+            android:layout_below="@+id/btn"
+            android:text="@string/tekan_tombol"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
